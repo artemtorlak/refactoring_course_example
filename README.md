@@ -11,9 +11,13 @@ At the first step we can see that "case" statement looks very huge and can be ea
 
 https://github.com/artemtorlak/refactoring_course_example/compare/92e82a69ed188d35b6b73e0885c893cb83802a85..8a3949ea29536c2d7ca3c9772b0cd58fbb516517
 
-## 2. Transfer amountFor function to the appropriate class
+## 2. Transfer "amountFor" method to the appropriate class
 Looking to "amountFor" function we can see that this function uses data most from "Rental" class, not from "Customer". 
 In this case the best option is to try to transfer method "amountFor" to appropriate class.
 
 https://github.com/artemtorlak/refactoring_course_example/compare/8a3949ea29536c2d7ca3c9772b0cd58fbb516517..3d638ee65f2ea5319c7101ca45c9a0bf607db4f7
 
+## 3. Delete method "amountFor"
+Now we can see that method “amountFor” in class “Customer” is not necessary because we can call method “getCharge” from class Rental.
+
+https://github.com/artemtorlak/refactoring_course_example/compare/3d638ee65f2ea5319c7101ca45c9a0bf607db4f7..efb8ecbe6f6fcb1011094ea813b946aa822e9234
