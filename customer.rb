@@ -14,7 +14,7 @@ class Customer
     rentals.each do |rental|
       this_amount = 0
 
-      this_amount = amountFor(rental)
+      this_amount = rental.getCharge
       # Add additional points for frequent customer
       frequent_renter_points += 1
 
@@ -34,10 +34,4 @@ class Customer
 
     return result
   end
-end
-
-private
-
-def amountFor(rental)
-  return rental.getCharge
 end
