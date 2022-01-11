@@ -20,4 +20,8 @@ https://github.com/artemtorlak/refactoring_course_example/compare/8a3949ea29536c
 ## 3. Delete method "amountFor"
 Now we can see that method “amountFor” in class “Customer” is not necessary because we can call method “getCharge” from class Rental.
 
-https://github.com/artemtorlak/refactoring_course_example/compare/3d638ee65f2ea5319c7101ca45c9a0bf607db4f7..13de24b96f5bbf7ac833b17518bc2a053ff96356
+https://github.com/artemtorlak/refactoring_course_example/commit/efb8ecbe6f6fcb1011094ea813b946aa822e9234
+
+## 4. Replace Temp vairables with Query
+When it is possible it is better to delete temp variables. And replace them with directly calling method. Even if in this case we will call several times function. We will optimize this in our next steps
+https://github.com/artemtorlak/refactoring_course_example/commit/13de24b96f5bbf7ac833b17518bc2a053ff96356
