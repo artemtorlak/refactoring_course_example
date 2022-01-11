@@ -26,4 +26,12 @@ class Rental
 
     return result
   end
+
+  def get_frequent_renter_points
+    if (movie.price_code == Movie::NEW_RELEASE && days_rented > 1)
+      return 2
+    else
+      return 1
+    end
+  end
 end
