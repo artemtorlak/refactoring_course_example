@@ -25,3 +25,8 @@ https://github.com/artemtorlak/refactoring_course_example/commit/efb8ecbe6f6fcb1
 ## 4. Replace Temp vairables with Query
 When it is possible it is better to delete temp variables. And replace them with directly calling method. Even if in this case we will call several times function. We will optimize this in our next steps
 https://github.com/artemtorlak/refactoring_course_example/commit/13de24b96f5bbf7ac833b17518bc2a053ff96356
+
+## 5. Extract method from Customer to Rental class
+We can extract to serate method algorithm for counting points. It is better to have this method in Rental class.
+
+https://github.com/artemtorlak/refactoring_course_example/commit/26b06332dd85765b7c2462cc71d98d27163b8bbe
