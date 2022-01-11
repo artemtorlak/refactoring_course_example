@@ -39,22 +39,5 @@ end
 private
 
 def amountFor(rental)
-  this_amount = 0
-
-  case rental.movie.price_code
-  when Movie::CHILDRENS
-    this_amount += 1.5
-    if(rental.days_rented > 3)
-      this_amount += (rental.days_rented - 3) * 1.5
-    end
-  when Movie::NEW_RELEASE
-    this_amount += rental.days_rented * 3
-  when Movie::REGULAR
-    this_amount += 2
-    if(rental.days_rented > 2)
-      this_amount += (rental.days_rented - 2) * 1.5
-    end
-  end
-
-  return this_amount
+  return rental.getCharge
 end
