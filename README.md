@@ -20,4 +20,4 @@ https://github.com/artemtorlak/refactoring_course_example/compare/8a3949ea29536c
 ## 3. Delete method "amountFor"
 Now we can see that method “amountFor” in class “Customer” is not necessary because we can call method “getCharge” from class Rental.
 
-https://github.com/artemtorlak/refactoring_course_example/compare/3d638ee65f2ea5319c7101ca45c9a0bf607db4f7..efb8ecbe6f6fcb1011094ea813b946aa822e9234
+https://github.com/artemtorlak/refactoring_course_example/compare/3d638ee65f2ea5319c7101ca45c9a0bf607db4f7..13de24b96f5bbf7ac833b17518bc2a053ff96356
